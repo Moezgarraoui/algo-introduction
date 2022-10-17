@@ -1,0 +1,26 @@
+ALGORITHM test
+
+VAR
+c:CHAR
+length : INTEGER
+num_char: INTEGER
+num_vow:INTEGER
+BEGIN
+    WHILE (a<>".") DO
+    
+            length:=length+1
+
+        
+         
+         IF (a=" ") THEN
+            num_char:=num_char+1
+         END_IF
+
+         IF (a="a" OR a="e" OR a="i" OR a="O" OR a="u" OR a="y") THEN
+            num_vow:=num_vow+1
+         END_IF
+    END_WHILE
+    Write (" length=", length)
+    Write (" num_char", num_char)
+    Write (" num_vow", num_vow) 
+END
